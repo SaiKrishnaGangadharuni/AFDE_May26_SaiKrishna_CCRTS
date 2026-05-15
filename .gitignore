@@ -1,0 +1,60 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# ===== Node / React =====
+node_modules/
+dist/
+build/
+.vite/
+.parcel-cache/
+*.tsbuildinfo
+
+# ===== Environment files =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===== IDE / OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===== Database (keep schema, ignore runtime DB if needed) =====
+# backend/ccrts.db  # uncomment to ignore the SQLite runtime file
+*.db-journal
+*.sqlite-journal
+
+# Leftover empty files from sandbox testing — safe to delete locally
+backend/testwrite.txt
+backend/test.db
+backend/.gitkeep_remove_testwrite
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Uploads (user-generated content) =====
+backend/uploads/*
+!backend/uploads/.gitkeep

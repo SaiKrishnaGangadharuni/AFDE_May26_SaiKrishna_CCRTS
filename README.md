@@ -261,3 +261,124 @@ curl http://localhost:8000/api/complaints \
 ## 12. License & Plagiarism Statement
 
 This is original work created for the AFDE Jan 2026 capstone Phase 1 submission. No code has been copied from another participant's repository or any third-party project. All open-source dependencies are used under their respective licenses (MIT/BSD/Apache 2.0).
+
+---
+
+# Phase 2 — ETL Pipeline & Analytics Dashboard
+
+Phase 2 extends the Phase 1 platform with a Python + Pandas ETL pipeline that ingests a CSV complaint dataset, cleans it, loads it into separate analytics tables, and surfaces the results through a new **Analytics & ETL** dashboard.
+
+## 13. Phase 2 Scope (per spec)
+
+- Import complaint datasets
+- Track SLA violations
+- Generate complaint trend reports
+- Build resolution analytics
+
+## 14. ETL Workflow
+
+```
+datasets/complaints_dataset.csv      <-- 218 rows (mixed-case, dupes, nulls intentional)
+                |
+                | etl/extract.py     Pandas read_csv + schema check
+                v
+            raw DataFrame
+                |
+                | etl/transform.py   1. drop empty rows
+                |                    2. drop duplicates by complaint_id
+                |                    3. strip whitespace
+                |                    4. normalize priority   (low/HIGH/Med -> Low/High/Medium)
+                |                    5. normalize status     (in_progress/InProgress -> In Progress)
+                |                    6. coerce numeric & datetime columns
+                |                    7. backfill sla_hours from canonical map
+                |                    8. compute sla_breached = resolution_time > sla_hours
+                v
+            cleaned DataFrame (210 rows)
+                |
+                | pandas aggregations
+                v
+            ┌──────────────────┬──────────────────┬───────────────────────┬──────────────────────┐
+            v                  v                  v                       v                      v
+     analytics_complaints   category_stats   sla_breach_report    resolution_trends    agent_performance
+                                                                                                  (etl/load.py)
+```
+
+### Stages explained
+
+| Stage | File | What it does |
+|------|------|--------------|
+| **Extract** | `etl/extract.py` | Reads `datasets/complaints_dataset.csv` (or `.xlsx`) via Pandas. Verifies required columns are present. |
+| **Transform** | `etl/transform.py` | Cleans, normalizes, and derives `sla_breached`. Builds 4 aggregation DataFrames (category, SLA-by-priority, monthly trend, per-agent). |
+| **Load** | `etl/load.py` | Truncate + insert into 5 analytics tables. Each ETL run also records a row in `analytics_etl_runs` (audit log). |
+| **Orchestrator** | `etl/run_etl.py` | Wires Extract -> Transform -> Load together. CLI + programmatic API. |
+
+## 15. Phase 2 — How to Run the ETL
+
+### From the command line
+```bash
+cd AFDE_May26_SaiKrishna_CCRTS
+# Phase 1 venv already has SQLAlchemy & FastAPI. Add pandas:
+backend\venv\Scripts\activate
+pip install pandas openpyxl
+python -m etl.run_etl
+```
+
+You should see:
+```
+[ETL] Source: datasets/complaints_dataset.csv
+[ETL] Summary:
+  status: success
+  run_id: 1
+  rows_extracted: 218
+  rows_after_clean: 210
+  duplicates_dropped: 5
+  null_rows_dropped: 3
+  rows_loaded: 210
+```
+
+### From the UI
+1. Start the backend: `uvicorn app.main:app --reload`
+2. Start the frontend: `cd frontend && npm run dev`
+3. Login as Admin or Supervisor
+4. Open the **Analytics** menu item
+5. Click the **Run ETL** button — the dashboard refreshes with new data
+
+## 16. Phase 2 — Analytics API endpoints
+
+| Method | URL | Auth | Description |
+|--------|-----|------|-------------|
+| POST | `/api/etl/run` | Admin / Supervisor | Trigger the ETL pipeline against the default dataset |
+| GET | `/api/etl/runs` | Any logged-in user | List recent ETL runs |
+| GET | `/api/etl/latest` | Any logged-in user | Latest ETL run summary |
+| GET | `/api/analytics/summary` | Any logged-in user | Overall counts + breach rate + last-run summary |
+| GET | `/api/analytics/sla-breaches` | Any logged-in user | SLA breaches grouped by priority |
+| GET | `/api/analytics/categories` | Any logged-in user | Complaints + resolution averages per category |
+| GET | `/api/analytics/resolution-trends` | Any logged-in user | Monthly resolution-time trend |
+| GET | `/api/analytics/agents` | Any logged-in user | Agent-wise handled / resolved / breach metrics |
+
+## 17. Phase 2 — Analytics Tables (separate from operational tables)
+
+| Table | Purpose |
+|-------|---------|
+| `analytics_complaints` | Cleaned, normalized complaint rows from the ETL run |
+| `analytics_category_stats` | Counts + breach + avg resolution per category |
+| `analytics_sla_breaches` | Breach count + breach rate per priority |
+| `analytics_resolution_trends` | Monthly resolution metrics |
+| `analytics_agent_performance` | Per-agent handled / resolved / breach + avg resolution |
+| `analytics_etl_runs` | Audit log of every ETL execution |
+
+## 18. Phase 2 — Dataset
+
+`datasets/complaints_dataset.csv` — 218 rows including 5 intentional duplicates and 3 fully-empty rows so the Transform stage has work to do.
+
+Columns: `complaint_id, complaint_category, priority, sla_hours, resolution_time_hours, status, agent_name, created_date, resolved_date`
+
+## 19. Phase 2 — Deliverables Checklist
+
+- [x] ETL scripts (`etl/` package — extract / transform / load / run_etl)
+- [x] Reporting / analytics tables (6 new tables, isolated from operational)
+- [x] Analytics dashboards (new **Analytics** page with Recharts)
+- [x] Updated APIs (`/api/etl/*` + `/api/analytics/*`)
+- [x] Dataset committed under `datasets/`
+- [x] README updated with ETL workflow explanation
+- [ ] Screenshots of ETL execution and dashboard (capture during demo)

@@ -9,11 +9,20 @@ OpenAPI docs are auto-generated at:
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 
 from .core.config import settings
 from .core.database import Base, engine
-from .routes import auth, users, categories, complaints, notifications, dashboard
+from .routes import (
+    auth,
+    users,
+    categories,
+    complaints,
+    notifications,
+    dashboard,
+    analytics,
+)
+# Phase 2 — register analytics models so create_all sees them
+from .models import analytics_models  # noqa: F401
 
 
 # Auto-create tables on first run. For production, use Alembic migrations.
@@ -24,17 +33,19 @@ app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.VERSION,
     description=(
-        "Phase 1 capstone — REST API for managing the customer complaint "
+        "Phase 1 capstone REST API for managing the customer complaint "
         "lifecycle: registration, assignment, SLA tracking, escalation, "
-        "resolution, feedback, and analytics."
+        "resolution, feedback, and analytics. "
+        "Phase 2 adds an ETL pipeline (Pandas) that ingests CSV complaint "
+        "datasets, cleans them, and populates analytics tables surfaced via "
+        "/api/analytics/* endpoints."
     ),
     docs_url="/docs",
     redoc_url="/redoc",
     openapi_url="/openapi.json",
 )
 
-
-# CORS so the React dev server (localhost:5173) can talk to the API.
+# CORS so the React dev server can talk to the API.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
@@ -43,9 +54,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 # Mount routers
-for r in (auth, users, categories, complaints, notifications, dashboard):
+for r in (auth, users, categories, complaints, notifications, dashboard, analytics):
     app.include_router(r.router, prefix=settings.API_PREFIX)
 
 

@@ -58,3 +58,9 @@ yarn-error.log*
 # ===== Uploads (user-generated content) =====
 backend/uploads/*
 !backend/uploads/.gitkeep
+
+# ===== Phase 2 — ETL backups & artifacts =====
+*.bak
+frontend/src/App.jsx.bak
+frontend/src/components/Layout.jsx.bak
+frontend/vite.config.js.timestamp-*.mjs

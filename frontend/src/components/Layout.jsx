@@ -22,6 +22,7 @@ const NAV = {
     { path: '/complaints',        label: 'Complaints' },
     { path: '/escalations',       label: 'Escalations' },
     { path: '/reports',           label: 'Reports' },
+    { path: '/analytics',         label: 'Analytics' },
     { path: '/notifications',     label: 'Notifications' },
   ],
   Admin: [
@@ -29,6 +30,7 @@ const NAV = {
     { path: '/complaints',        label: 'Complaints' },
     { path: '/escalations',       label: 'Escalations' },
     { path: '/reports',           label: 'Reports' },
+    { path: '/analytics',         label: 'Analytics' },
     { path: '/users',             label: 'Users' },
     { path: '/categories',        label: 'Categories' },
     { path: '/notifications',     label: 'Notifications' },

@@ -15,6 +15,7 @@ import Reports from './pages/Reports.jsx'
 import Users from './pages/Users.jsx'
 import Categories from './pages/Categories.jsx'
 import Notifications from './pages/Notifications.jsx'
+import Analytics from './pages/Analytics.jsx'
 
 const withLayout = (el) => (
   <ProtectedRoute>
@@ -40,6 +41,11 @@ export default function App() {
       <Route path="/reports" element={
         <ProtectedRoute roles={['Admin', 'Supervisor']}>
           <Layout><Reports /></Layout>
+        </ProtectedRoute>
+      } />
+      <Route path="/analytics" element={
+        <ProtectedRoute roles={['Admin', 'Supervisor']}>
+          <Layout><Analytics /></Layout>
         </ProtectedRoute>
       } />
       <Route path="/users" element={

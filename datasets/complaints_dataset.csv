@@ -1,0 +1,219 @@
+complaint_id,complaint_category,priority,sla_hours,resolution_time_hours,status,agent_name,created_date,resolved_date
+CMP-00124,Service Disruption,Medium,48,,open,,2026-04-13 13:00:00,
+CMP-00030,Account Access,Med,48,,OPEN,,2026-03-22 08:00:00,
+CMP-00203,Refund Request,Med,48,31.49,closed,Agent_Eshwar,2026-03-28 16:00:00,2026-03-29 23:00:00
+CMP-00160,Refund Request, high,24,22.87,resolved,Agent_Asha,2026-02-11 06:00:00,2026-02-12 04:00:00
+CMP-00109,Roaming, low ,72,,InProgress,Agent_Charan,2026-02-14 06:00:00,
+CMP-00068,Account Access,HIGH,24,,in progress,Agent_Hema,2026-01-23 08:00:00,
+CMP-00076,Service Disruption, Medium,48,26.94,resolved,Agent_Hema,2026-01-12 01:00:00,2026-01-13 03:00:00
+CMP-00176,Service Disruption,MEDIUM,48,40.64,RESOLVED,Agent_Asha,2026-04-01 19:00:00,2026-04-03 11:00:00
+CMP-00053,Technical Issue,med,48,32.43,closed,Agent_Hema,2026-04-24 19:00:00,2026-04-26 03:00:00
+CMP-00142,Hardware Defect, Medium,48,,Escalated,Agent_Divya,2026-04-22 03:00:00,
+CMP-00188,Activation, low ,72,,assigned,Agent_Charan,2026-01-24 16:00:00,
+CMP-00146,Plan Change,crit,4,2.64,RESOLVED,Agent_Fatima,2026-04-25 21:00:00,2026-04-25 23:00:00
+CMP-00078,Service Disruption, high,24,64.09,RESOLVED,Agent_Divya,2026-01-14 04:00:00,2026-01-16 20:00:00
+CMP-00119,Service Disruption, Medium,48,66.79,Resolved,Agent_Divya,2026-01-13 10:00:00,2026-01-16 04:00:00
+CMP-00171,Network Quality,low,72,,Open,,2026-01-11 10:00:00,
+CMP-00007,Account Access, high,24,,IN_PROGRESS,Agent_Fatima,2026-02-11 11:00:00,
+CMP-00186,Network Quality,Med,48,47.83,Resolved,Agent_Charan,2026-02-03 13:00:00,2026-02-05 12:00:00
+CMP-00009,Billing,MEDIUM,48,,Reopened,Agent_Divya,2026-03-25 01:00:00,
+CMP-00067,Hardware Defect, Medium,48,31.77,RESOLVED,Agent_Hema,2026-03-11 19:00:00,2026-03-13 02:00:00
+CMP-00100,Hardware Defect,med,48,40.0,Closed,Agent_Bhanu,2026-01-18 07:00:00,2026-01-19 22:00:00
+CMP-00094,Activation,Crit,4,,In Progress,Agent_Eshwar,2026-03-14 23:00:00,
+CMP-00022,Refund Request,medium,48,105.35,closed,Agent_Gaurav,2026-02-18 03:00:00,2026-02-22 12:00:00
+CMP-00027,Account Access, Medium,48,,reopened,Agent_Eshwar,2026-02-09 06:00:00,
+CMP-00072,Hardware Defect,low,72,,IN_PROGRESS,Agent_Fatima,2026-05-02 17:00:00,
+CMP-00090,Service Disruption,high,24,,in progress,Agent_Hema,2026-03-15 14:00:00,
+CMP-00019,Service Disruption,critical,4,3.12,closed,Agent_Divya,2026-04-06 14:00:00,2026-04-06 17:00:00
+CMP-00155,Network Quality, Medium,48,32.36,Closed,Agent_Fatima,2026-01-24 20:00:00,2026-01-26 04:00:00
+CMP-00156,Technical Issue,low,72,,InProgress,Agent_Charan,2026-02-19 07:00:00,
+CMP-00017,Technical Issue,High,24,,open,,2026-01-18 17:00:00,
+CMP-00080,Account Access,Medium,48,40.66,RESOLVED,Agent_Charan,2026-01-26 06:00:00,2026-01-27 22:00:00
+CMP-00015,Activation,High,24,73.76,closed,Agent_Asha,2026-05-10 19:00:00,2026-05-13 20:00:00
+CMP-00071,Network Quality,LOW,72,44.79,Resolved,Agent_Bhanu,2026-05-02 20:00:00,2026-05-04 16:00:00
+CMP-00111,Roaming, high,24,,Reopened,Agent_Gaurav,2026-02-27 21:00:00,
+CMP-00177,Billing,med,48,,in progress,Agent_Hema,2026-01-08 04:00:00,
+CMP-00096,Billing,critical,4,,Reopened,Agent_Gaurav,2026-04-09 07:00:00,
+CMP-00064,Service Disruption,Critical,4,4.08,resolved,Agent_Divya,2026-04-07 12:00:00,2026-04-07 16:00:00
+CMP-00181,Plan Change,low,72,67.81,closed,Agent_Fatima,2026-02-14 22:00:00,2026-02-17 17:00:00
+CMP-00098,Technical Issue, low ,72,72.72,closed,Agent_Gaurav,2026-01-26 16:00:00,2026-01-29 16:00:00
+CMP-00209,Account Access,CRITICAL,4,4.28,RESOLVED,Agent_Eshwar,2026-03-09 19:00:00,2026-03-09 23:00:00
+CMP-00112,Plan Change,med,48,,OPEN,,2026-02-01 14:00:00,
+CMP-00081,Network Quality,Low,72,,assigned,Agent_Hema,2026-04-26 22:00:00,
+CMP-00032,Roaming,Medium,48,,OPEN,,2026-01-26 02:00:00,
+CMP-00148,Activation,Medium,48,,IN_PROGRESS,Agent_Bhanu,2026-01-20 20:00:00,
+CMP-00126,Service Disruption, low ,72,39.29,RESOLVED,Agent_Gaurav,2026-03-25 12:00:00,2026-03-27 03:00:00
+CMP-00069,Account Access, high,24,,InProgress,Agent_Hema,2026-03-25 05:00:00,
+CMP-00113,Refund Request, Medium,48,,InProgress,Agent_Divya,2026-04-06 03:00:00,
+CMP-00033,Network Quality, low ,72,,assigned,Agent_Fatima,2026-01-18 07:00:00,
+CMP-00174,Activation,Crit,4,,In Progress,Agent_Gaurav,2026-04-19 02:00:00,
+CMP-00004,Hardware Defect,MEDIUM,48,,in progress,Agent_Bhanu,2026-03-28 03:00:00,
+CMP-00132,Hardware Defect,Low,72,,IN_PROGRESS,Agent_Divya,2026-01-30 08:00:00,
+CMP-00037,Service Disruption,medium,48,26.43,resolved,Agent_Asha,2026-02-11 23:00:00,2026-02-13 01:00:00
+CMP-00005,Activation, low ,72,122.08,Resolved,Agent_Eshwar,2026-04-28 17:00:00,2026-05-03 19:00:00
+CMP-00170,Refund Request, low ,72,61.81,Closed,Agent_Bhanu,2026-04-29 22:00:00,2026-05-02 11:00:00
+CMP-00154,Network Quality,medium,48,,escalated,Agent_Bhanu,2026-04-11 04:00:00,
+CMP-00057,Hardware Defect,LOW,72,72.94,RESOLVED,Agent_Eshwar,2026-01-06 18:00:00,2026-01-09 18:00:00
+CMP-00169,Technical Issue,CRITICAL,4,19.77,closed,Agent_Fatima,2026-01-18 11:00:00,2026-01-19 06:00:00
+CMP-00207,Roaming,med,48,25.73,closed,Agent_Charan,2026-05-09 19:00:00,2026-05-10 20:00:00
+CMP-00006,Account Access,HIGH,24,12.29,RESOLVED,Agent_Bhanu,2026-01-18 01:00:00,2026-01-18 13:00:00
+CMP-00051,Refund Request,Crit,4,2.19,Closed,Agent_Gaurav,2026-04-27 13:00:00,2026-04-27 15:00:00
+CMP-00056,Hardware Defect, Medium,48,,assigned,Agent_Hema,2026-04-15 10:00:00,
+CMP-00093,Plan Change,medium,48,,in progress,Agent_Gaurav,2026-01-18 08:00:00,
+CMP-00049,Network Quality,MEDIUM,48,25.17,resolved,Agent_Bhanu,2026-02-24 16:00:00,2026-02-25 17:00:00
+CMP-00125,Technical Issue,med,48,,Open,,2026-03-24 19:00:00,
+CMP-00101,Hardware Defect,Critical,4,13.29,RESOLVED,Agent_Fatima,2026-03-18 00:00:00,2026-03-18 13:00:00
+CMP-00145,Technical Issue, low ,72,, assigned,Agent_Bhanu,2026-02-09 20:00:00,
+CMP-00061,Plan Change,LOW,72,,In Progress,Agent_Asha,2026-05-01 00:00:00,
+CMP-00054,Network Quality, high,24,21.27,Resolved,Agent_Bhanu,2026-03-12 16:00:00,2026-03-13 13:00:00
+CMP-00092,Account Access,critical,4,3.83,RESOLVED,Agent_Hema,2026-03-16 16:00:00,2026-03-16 19:00:00
+CMP-00059,Service Disruption,med,48,36.59,closed,Agent_Asha,2026-02-02 19:00:00,2026-02-04 07:00:00
+CMP-00020,Plan Change,Med,48,57.23,RESOLVED,Agent_Asha,2026-02-26 00:00:00,2026-02-28 09:00:00
+CMP-00103,Refund Request,critical,4,,IN_PROGRESS,Agent_Asha,2026-04-28 08:00:00,
+CMP-00104,Hardware Defect,Crit,4,,assigned,Agent_Eshwar,2026-03-30 18:00:00,
+CMP-00091,Refund Request,low,72,58.99,closed,Agent_Bhanu,2026-01-04 17:00:00,2026-01-07 03:00:00
+CMP-00133,Billing,High,24,65.92,RESOLVED,Agent_Fatima,2026-03-10 00:00:00,2026-03-12 17:00:00
+CMP-00128,Refund Request,Medium,48,,IN_PROGRESS,Agent_Charan,2026-03-07 11:00:00,
+CMP-00167,Roaming, low ,72,,InProgress,Agent_Bhanu,2026-02-17 21:00:00,
+CMP-00088,Roaming,LOW,72,52.12,Closed,Agent_Gaurav,2026-04-27 02:00:00,2026-04-29 06:00:00
+CMP-00115,Service Disruption,Medium,48,,Assigned,Agent_Bhanu,2026-03-19 15:00:00,
+CMP-00065,Billing,MEDIUM,48,27.37,Closed,Agent_Fatima,2026-01-11 11:00:00,2026-01-12 14:00:00
+CMP-00108,Technical Issue,Critical,4,,InProgress,Agent_Fatima,2026-01-09 18:00:00,
+CMP-00208,Refund Request, low ,72,,reopened,Agent_Charan,2026-04-07 10:00:00,
+CMP-00040,Refund Request, low ,72,87.38,closed,Agent_Asha,2026-03-05 08:00:00,2026-03-08 23:00:00
+CMP-00159,Refund Request,low,72,,InProgress,Agent_Hema,2026-02-19 11:00:00,
+CMP-00162,Service Disruption,low,72,138.37,closed,Agent_Gaurav,2026-01-07 13:00:00,2026-01-13 07:00:00
+CMP-00008,Technical Issue, Medium,48,,Escalated,Agent_Divya,2026-02-13 17:00:00,
+CMP-00185,Roaming,High,24,,assigned,Agent_Hema,2026-01-19 14:00:00,
+CMP-00047,Hardware Defect,med,48,,IN_PROGRESS,Agent_Gaurav,2026-02-02 06:00:00,
+CMP-00084,Plan Change, low ,72,67.6,closed,Agent_Gaurav,2026-05-09 17:00:00,2026-05-12 12:00:00
+CMP-00099,Plan Change, low ,72,,InProgress,Agent_Gaurav,2026-01-21 10:00:00,
+CMP-00139,Technical Issue,HIGH,24,,In Progress,Agent_Gaurav,2026-01-02 15:00:00,
+CMP-00163,Billing,Medium,48,,In Progress,Agent_Charan,2026-03-27 04:00:00,
+CMP-00149,Activation,med,48,30.65,RESOLVED,Agent_Fatima,2026-01-11 14:00:00,2026-01-12 20:00:00
+CMP-00039,Hardware Defect,low,72,57.86,closed,Agent_Charan,2026-04-15 19:00:00,2026-04-18 04:00:00
+CMP-00043,Billing,Medium,48,,assigned,Agent_Eshwar,2026-02-15 18:00:00,
+CMP-00199,Roaming,medium,48,,IN_PROGRESS,Agent_Hema,2026-01-19 12:00:00,
+CMP-00184,Hardware Defect,high,24,13.72,Resolved,Agent_Gaurav,2026-01-17 09:00:00,2026-01-17 22:00:00
+CMP-00031,Refund Request,MEDIUM,48,,InProgress,Agent_Eshwar,2026-02-03 21:00:00,
+CMP-00134,Hardware Defect,low,72,71.09,resolved,Agent_Divya,2026-01-18 04:00:00,2026-01-21 03:00:00
+CMP-00034,Technical Issue, low ,72,53.93,RESOLVED,Agent_Bhanu,2026-01-03 21:00:00,2026-01-06 02:00:00
+CMP-00001,Activation,Medium,48,27.74,Closed,Agent_Bhanu,2026-02-27 04:00:00,2026-02-28 07:00:00
+CMP-00032,Roaming,Medium,48,,OPEN,,2026-01-26 02:00:00,
+CMP-00116,Hardware Defect,low,72,,IN_PROGRESS,Agent_Charan,2026-04-18 18:00:00,
+CMP-00189,Billing,critical,4,, assigned,Agent_Asha,2026-03-28 18:00:00,
+CMP-00018,Account Access,LOW,72,,Reopened,Agent_Gaurav,2026-03-09 16:00:00,
+CMP-00024,Service Disruption,LOW,72,,Assigned,Agent_Divya,2026-03-13 14:00:00,
+CMP-00187,Service Disruption, low ,72,,Escalated,Agent_Eshwar,2026-03-30 16:00:00,
+CMP-00197,Refund Request, low ,72,,open,,2026-05-07 19:00:00,
+CMP-00140,Service Disruption,low,72,70.44,RESOLVED,Agent_Hema,2026-04-01 02:00:00,2026-04-04 00:00:00
+CMP-00012,Technical Issue,Med,48,24.05,Resolved,Agent_Bhanu,2026-02-05 16:00:00,2026-02-06 16:00:00
+CMP-00131,Refund Request,MEDIUM,48,,OPEN,,2026-02-24 04:00:00,
+CMP-00129,Roaming,Low,72,,Open,,2026-04-06 04:00:00,
+CMP-00201,Billing,critical,4,, assigned,Agent_Asha,2026-04-13 16:00:00,
+CMP-00196,Account Access, high,24,,open,,2026-05-10 14:00:00,
+CMP-00166,Hardware Defect,Medium,48,41.72,closed,Agent_Eshwar,2026-01-05 20:00:00,2026-01-07 13:00:00
+CMP-00082,Hardware Defect, low ,72,107.79,closed,Agent_Divya,2026-01-19 21:00:00,2026-01-24 08:00:00
+CMP-00110,Plan Change,HIGH,24,17.97,resolved,Agent_Eshwar,2026-02-12 08:00:00,2026-02-13 01:00:00
+CMP-00079,Network Quality,med,48,34.3,RESOLVED,Agent_Gaurav,2026-02-27 16:00:00,2026-03-01 02:00:00
+CMP-00161,Hardware Defect,High,24,20.45,Closed,Agent_Charan,2026-03-14 02:00:00,2026-03-14 22:00:00
+CMP-00025,Account Access,Med,48,,OPEN,,2026-01-04 02:00:00,
+CMP-00097,Billing,med,48,28.98,closed,Agent_Hema,2026-04-09 21:00:00,2026-04-11 01:00:00
+CMP-00087,Refund Request,med,48,,In Progress,Agent_Gaurav,2026-02-11 10:00:00,
+CMP-00143,Plan Change,Med,48,,open,,2026-03-28 07:00:00,
+CMP-00174,Activation,Crit,4,,In Progress,Agent_Gaurav,2026-04-19 02:00:00,
+CMP-00152,Service Disruption,MEDIUM,48,,IN_PROGRESS,Agent_Fatima,2026-01-14 20:00:00,
+CMP-00044,Hardware Defect,LOW,72,,IN_PROGRESS,Agent_Bhanu,2026-04-22 19:00:00,
+CMP-00095,Refund Request, Medium,48,38.55,Resolved,Agent_Gaurav,2026-04-25 17:00:00,2026-04-27 07:00:00
+CMP-00173,Plan Change, low ,72,61.5,resolved,Agent_Hema,2026-04-23 12:00:00,2026-04-26 01:00:00
+CMP-00150,Roaming,medium,48,,reopened,Agent_Bhanu,2026-01-27 10:00:00,
+CMP-00204,Billing,HIGH,24,,In Progress,Agent_Eshwar,2026-04-17 18:00:00,
+CMP-00118,Service Disruption, low ,72,60.97,RESOLVED,Agent_Hema,2026-04-02 01:00:00,2026-04-04 13:00:00
+CMP-00042,Roaming,Medium,48,,reopened,Agent_Gaurav,2026-03-31 20:00:00,
+CMP-00178,Plan Change,low,72,70.61,closed,Agent_Hema,2026-04-03 12:00:00,2026-04-06 10:00:00
+CMP-00029,Activation,Critical,4,3.12,Closed,Agent_Divya,2026-01-18 21:00:00,2026-01-19 00:00:00
+CMP-00050,Account Access, Medium,48,42.15,Resolved,Agent_Asha,2026-03-02 21:00:00,2026-03-04 15:00:00
+CMP-00195,Refund Request,CRITICAL,4,,Assigned,Agent_Hema,2026-05-08 16:00:00,
+CMP-00120,Technical Issue,high,24,15.0,Resolved,Agent_Charan,2026-03-26 04:00:00,2026-03-26 19:00:00
+CMP-00130,Network Quality, low ,72,45.87,closed,Agent_Asha,2026-04-01 21:00:00,2026-04-03 18:00:00
+CMP-00035,Roaming,Low,72,51.2,Closed,Agent_Eshwar,2026-03-11 09:00:00,2026-03-13 12:00:00
+CMP-00191,Account Access, Medium,48,106.42,resolved,Agent_Hema,2026-01-19 22:00:00,2026-01-24 08:00:00
+CMP-00135,Billing,MEDIUM,48,,assigned,Agent_Bhanu,2026-03-25 18:00:00,
+CMP-00140,Service Disruption,low,72,70.44,RESOLVED,Agent_Hema,2026-04-01 02:00:00,2026-04-04 00:00:00
+CMP-00117,Plan Change,med,48,34.44,resolved,Agent_Divya,2026-01-09 22:00:00,2026-01-11 08:00:00
+CMP-00073,Account Access,Crit,4,,InProgress,Agent_Eshwar,2026-03-11 09:00:00,
+CMP-00086,Service Disruption,medium,48,105.63,RESOLVED,Agent_Hema,2026-04-24 08:00:00,2026-04-28 17:00:00
+CMP-00193,Account Access,Medium,48,,InProgress,Agent_Hema,2026-02-01 08:00:00,
+CMP-00077,Service Disruption,HIGH,24,20.94,resolved,Agent_Hema,2026-03-29 05:00:00,2026-03-30 01:00:00
+CMP-00003,Technical Issue, Medium,48,40.81,RESOLVED,Agent_Asha,2026-04-18 07:00:00,2026-04-19 23:00:00
+CMP-00153,Service Disruption,Med,48,29.87,closed,Agent_Fatima,2026-03-06 23:00:00,2026-03-08 04:00:00
+CMP-00147,Refund Request,Low,72,50.51,RESOLVED,Agent_Eshwar,2026-03-19 08:00:00,2026-03-21 10:00:00
+CMP-00048,Activation,medium,48,39.29,resolved,Agent_Gaurav,2026-04-14 17:00:00,2026-04-16 08:00:00
+CMP-00127,Hardware Defect,High,24,18.34,Closed,Agent_Hema,2026-04-21 14:00:00,2026-04-22 08:00:00
+,,,,,,,,
+CMP-00157,Technical Issue,Low,72,64.6,RESOLVED,Agent_Charan,2026-01-10 21:00:00,2026-01-13 13:00:00
+CMP-00046,Roaming, Medium,48,,escalated,Agent_Eshwar,2026-02-01 23:00:00,
+CMP-00107,Service Disruption,high,24,12.66,RESOLVED,Agent_Charan,2026-03-06 21:00:00,2026-03-07 09:00:00
+CMP-00045,Plan Change,high,24,,InProgress,Agent_Divya,2026-01-01 16:00:00,
+CMP-00010,Hardware Defect, high,24,,in progress,Agent_Hema,2026-03-22 06:00:00,
+CMP-00137,Network Quality,LOW,72,,OPEN,,2026-05-05 16:00:00,
+CMP-00182,Service Disruption,HIGH,24,,Escalated,Agent_Divya,2026-02-14 11:00:00,
+CMP-00147,Refund Request,Low,72,50.51,RESOLVED,Agent_Eshwar,2026-03-19 08:00:00,2026-03-21 10:00:00
+CMP-00023,Account Access,High,24,12.86,Closed,Agent_Divya,2026-01-16 12:00:00,2026-01-17 00:00:00
+CMP-00016,Account Access,Medium,48,,assigned,Agent_Asha,2026-03-20 07:00:00,
+CMP-00165,Activation, Medium,48,65.05,resolved,Agent_Gaurav,2026-01-29 09:00:00,2026-02-01 02:00:00
+CMP-00083,Refund Request,low,72,113.6,resolved,Agent_Eshwar,2026-02-06 02:00:00,2026-02-10 19:00:00
+,,,,,,,,
+CMP-00200,Roaming,Low,72,,Assigned,Agent_Fatima,2026-04-11 11:00:00,
+CMP-00202,Technical Issue, low ,72,64.33,closed,Agent_Fatima,2026-02-08 19:00:00,2026-02-11 11:00:00
+CMP-00122,Refund Request,high,24,79.53,Resolved,Agent_Bhanu,2026-02-14 08:00:00,2026-02-17 15:00:00
+CMP-00205,Technical Issue,MEDIUM,48,,Reopened,Agent_Hema,2026-01-14 18:00:00,
+CMP-00105,Network Quality,med,48,98.57,Closed,Agent_Eshwar,2026-04-09 15:00:00,2026-04-13 17:00:00
+CMP-00041,Hardware Defect,LOW,72,,in progress,Agent_Divya,2026-02-27 00:00:00,
+CMP-00141,Activation, high,24,28.97,RESOLVED,Agent_Charan,2026-04-17 09:00:00,2026-04-18 13:00:00
+CMP-00002,Billing,Medium,48,,Open,,2026-05-10 19:00:00,
+CMP-00194,Plan Change,Low,72,,InProgress,Agent_Charan,2026-04-18 07:00:00,
+CMP-00175,Technical Issue,critical,4,3.31,resolved,Agent_Gaurav,2026-01-27 02:00:00,2026-01-27 05:00:00
+CMP-00180,Refund Request, high,24,13.45,RESOLVED,Agent_Eshwar,2026-01-31 08:00:00,2026-01-31 21:00:00
+CMP-00121,Plan Change,medium,48,,Open,,2026-02-03 00:00:00,
+CMP-00085,Network Quality,Medium,48,,OPEN,,2026-01-06 21:00:00,
+CMP-00106,Activation,LOW,72,,In Progress,Agent_Divya,2026-05-08 09:00:00,
+CMP-00026,Network Quality,LOW,72,48.27,resolved,Agent_Hema,2026-01-16 05:00:00,2026-01-18 05:00:00
+CMP-00014,Roaming,Med,48,34.0,closed,Agent_Eshwar,2026-01-29 09:00:00,2026-01-30 19:00:00
+CMP-00060,Hardware Defect,medium,48,42.45,Closed,Agent_Fatima,2026-01-13 08:00:00,2026-01-15 02:00:00
+CMP-00164,Technical Issue,LOW,72,67.02,Closed,Agent_Divya,2026-05-01 14:00:00,2026-05-04 09:00:00
+CMP-00058,Plan Change, high,24,81.49,RESOLVED,Agent_Gaurav,2026-02-26 15:00:00,2026-03-02 00:00:00
+CMP-00136,Roaming,Low,72,44.41,closed,Agent_Divya,2026-04-24 21:00:00,2026-04-26 17:00:00
+CMP-00172,Network Quality,Med,48,24.05,Resolved,Agent_Fatima,2026-02-18 09:00:00,2026-02-19 09:00:00
+CMP-00013,Service Disruption, Medium,48,34.53,Resolved,Agent_Asha,2026-04-09 12:00:00,2026-04-10 22:00:00
+CMP-00063,Technical Issue,Medium,48,97.17,Resolved,Agent_Bhanu,2026-04-30 22:00:00,2026-05-04 23:00:00
+CMP-00062,Technical Issue,Low,72,76.62,Closed,Agent_Divya,2026-01-08 07:00:00,2026-01-11 11:00:00
+CMP-00151,Plan Change,Medium,48,,InProgress,Agent_Charan,2026-04-23 16:00:00,
+CMP-00190,Network Quality, low ,72,41.89,RESOLVED,Agent_Eshwar,2026-04-17 19:00:00,2026-04-19 12:00:00
+CMP-00158,Refund Request,low,72,57.97,Closed,Agent_Eshwar,2026-04-16 11:00:00,2026-04-18 20:00:00
+CMP-00028,Billing,Crit,4,67.5,Closed,Agent_Charan,2026-03-22 01:00:00,2026-03-24 20:00:00
+CMP-00036,Billing,Medium,48,,open,,2026-03-12 01:00:00,
+CMP-00098,Technical Issue, low ,72,72.72,closed,Agent_Gaurav,2026-01-26 16:00:00,2026-01-29 16:00:00
+CMP-00179,Billing,Medium,48,40.25,RESOLVED,Agent_Bhanu,2026-04-04 12:00:00,2026-04-06 04:00:00
+CMP-00144,Account Access,High,24,19.35,Resolved,Agent_Charan,2026-05-11 06:00:00,2026-05-12 01:00:00
+CMP-00070,Service Disruption,MEDIUM,48,,IN_PROGRESS,Agent_Divya,2026-01-03 16:00:00,
+CMP-00138,Account Access,LOW,72,,Reopened,Agent_Eshwar,2026-01-02 06:00:00,
+CMP-00052,Service Disruption,medium,48,116.46,Resolved,Agent_Divya,2026-01-28 13:00:00,2026-02-02 09:00:00
+CMP-00055,Hardware Defect, low ,72,,In Progress,Agent_Divya,2026-02-05 04:00:00,
+CMP-00123,Refund Request,MEDIUM,48,55.73,Resolved,Agent_Eshwar,2026-04-26 16:00:00,2026-04-28 23:00:00
+CMP-00192,Plan Change,medium,48,,IN_PROGRESS,Agent_Charan,2026-03-30 12:00:00,
+CMP-00066,Technical Issue, high,24,,open,,2026-04-28 22:00:00,
+CMP-00168,Hardware Defect,Critical,4,,Reopened,Agent_Asha,2026-04-10 15:00:00,
+CMP-00114,Network Quality, low ,72,,Escalated,Agent_Hema,2026-01-17 20:00:00,
+,,,,,,,,
+CMP-00021,Activation,low,72,,InProgress,Agent_Charan,2026-02-24 17:00:00,
+CMP-00183,Refund Request,critical,4,,InProgress,Agent_Fatima,2026-01-07 11:00:00,
+CMP-00074,Network Quality,low,72,,in progress,Agent_Hema,2026-02-19 06:00:00,
+CMP-00011,Activation, high,24,,Assigned,Agent_Eshwar,2026-03-05 23:00:00,
+CMP-00075,Technical Issue,HIGH,24,,Reopened,Agent_Fatima,2026-03-17 07:00:00,
+CMP-00038,Plan Change,low,72,113.36,resolved,Agent_Asha,2026-02-07 13:00:00,2026-02-12 06:00:00
+CMP-00206,Plan Change, Medium,48,64.19,resolved,Agent_Hema,2026-02-07 21:00:00,2026-02-10 13:00:00
+CMP-00198,Billing,Low,72,47.37,closed,Agent_Gaurav,2026-02-04 08:00:00,2026-02-06 07:00:00
+CMP-00089,Refund Request,High,24,92.36,RESOLVED,Agent_Hema,2026-04-29 13:00:00,2026-05-03 09:00:00
+CMP-00210,Network Quality,CRITICAL,4,2.93,Closed,Agent_Eshwar,2026-05-06 10:00:00,2026-05-06 12:00:00
+CMP-00102,Refund Request,LOW,72,122.62,Resolved,Agent_Divya,2026-02-13 05:00:00,2026-02-18 07:00:00

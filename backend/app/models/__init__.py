@@ -11,6 +11,14 @@ from .models import (
     StatusEnum,
     SLA_HOURS,
 )
+from .analytics_models import (
+    AnalyticsComplaint,
+    CategoryStat,
+    SLABreachReport,
+    ResolutionTrend,
+    AgentPerformance,
+    ETLRunLog,
+)
 
 __all__ = [
     "Role",
@@ -24,4 +32,11 @@ __all__ = [
     "PriorityEnum",
     "StatusEnum",
     "SLA_HOURS",
+    # Phase 2 — analytics
+    "AnalyticsComplaint",
+    "CategoryStat",
+    "SLABreachReport",
+    "ResolutionTrend",
+    "AgentPerformance",
+    "ETLRunLog",
 ]
